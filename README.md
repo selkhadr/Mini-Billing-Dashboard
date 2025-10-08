@@ -1,8 +1,7 @@
 # Mini-Billing-Dashboard
 
 ## Submission
-- **GitHub**: [your-repo-url](https://example.com)
-- **Approach (Laravel‑focused)**: I treated this as a production API: clear domain modeling (Users, Customers, Invoices), explicit migrations/factories/seeders, and lean REST controllers. Input is validated server‑side; responses are consistent JSON with proper status codes. Eloquent relationships power simple aggregations (dashboard stats) and include relationships (invoice → customer) where needed. The API is CORS‑enabled and resilient to validation/logic errors.
+- **Approach (Laravel‑focused)**: I treated this as a production API: clear domain modeling (Customers, Invoices), explicit migrations/factories/seeders, and lean REST controllers. Input is validated server‑side; responses are consistent JSON with proper status codes. Eloquent relationships power simple aggregations (dashboard stats) and include relationships (invoice → customer) where needed. The API is CORS‑enabled and resilient to validation/logic errors.
 - **Challenges**: Designing clean validation/error contracts for the frontend, keeping seeds deterministic but realistic, and computing dashboard aggregates efficiently without over‑fetching.
 
 ## Quick Setup Instructions
@@ -84,7 +83,7 @@ Next.js App Router client that consumes the Laravel API. UI is split into `compo
 
 ## Project Structure
 ```
-├── backend/              # Laravel API
+├── # Mini-Billing-Dashboard/              # Laravel API
 │   ├── app/             # Application code
 │   ├── database/        # Migrations, seeders, factories
 │   ├── routes/          # API routes
