@@ -2,7 +2,6 @@
 
 echo "Setting up Laravel Backend..."
 
-cd backend || { echo "❌ Backend directory not found"; exit 1; }
 
 echo "Installing Composer dependencies..."
 composer install || { echo "❌ Composer install failed"; exit 1; }
